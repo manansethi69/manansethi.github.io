@@ -1,0 +1,125 @@
+#team{
+    display: flex;
+    flex-direction:column;
+ }
+
+#images{
+    width: 960px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+html{
+    background: #abdbe3;
+}
+#images img{
+    padding: 20px;
+    margin: 5px;
+}
+#img1{
+    border: 3px dotted purple;
+}
+#img2{
+    border: 3px dotted purple;
+}
+#img3{
+    border: 3px dotted purple;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: square;
+    
+}
+th{
+    background-color: #63bbd6;
+}
+header > span{
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+h1{
+    text-align: center;
+}
+li::after{ 
+    content: "_________" 
+}
+.a69 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+em{
+    text-align: center;
+}
+header, footer{
+    background-color: #f3cfb4;
+    
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .nav1{
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+    }
+    .abouth{
+        position: absolute;
+        text-align:  center;
+        right: 50%;
+    }
+    
+    header{
+        position: absolute;
+        right: 0;
+    }
+    .iam{
+        text-align: justify;
+        
+    }
+    .coding{
+        text-align: center;
+        
+    }
+    
+    #images {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #images img {
+        width: 30%;
+    }
+    
+    
+}
+@media screen and (max-width: 1000px) {
+    .nav1{
+        font-size:x-large;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+    }
+    .abouth{
+        position: absolute;
+        text-align:  center;
+        right: 50%;
+    }
+    
+    header{
+        position: absolute;
+        right: 0;
+    }
+    
+
+    header > span {
+        grid-template-columns: 100px 1fr;
+    }
+}

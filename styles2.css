@@ -1,0 +1,213 @@
+#projects{
+    display: grid;
+    
+    
+    grid-template-areas:
+    "projects1 projects1 projects1"
+    "gamesimade gamesimade gamesimade"
+    "game1 game2 game3"
+    "projectsimade projectsimade projectsimade"
+    "robot1 p1 p1"
+    "p2 p2 robot2"
+}
+#projects1 {
+    
+    grid-area: projects1;
+ }
+ 
+ #gamesimade {
+    
+    grid-area: gamesimade;
+ }
+ 
+ #game1 {
+    
+    grid-area: game1;
+    background-color: aquamarine;
+ }
+ 
+ #game2 {
+    
+    grid-area: game2;
+    background-color: aquamarine;
+ }
+ 
+ #game3 {
+    
+    grid-area: game3;
+    background-color: aquamarine;
+ }
+ #projectsimade {
+    
+    grid-area: projectsimade;
+ }
+ #robot1 {
+    
+    grid-area: robot1;
+    background-color: beige;
+ }
+ #p1 {
+    
+    grid-area: p1;
+    background-color: beige;
+ }
+ #p2 {
+    
+    grid-area: p2;
+    background-color: beige;
+ }
+ #robot2 {
+   
+    grid-area: robot2;
+    background-color: beige;
+ }
+html{
+    background: #abdbe3;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ol{
+    list-style-type: lower-roman;
+}
+h1{
+    text-align: center;
+}
+
+#gamesimade, #projectsimade{
+    font-size: larger;
+}
+input[type="submit"]  {
+    color: green;
+}
+#gamesimade ~ p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+#gamesimade + p{
+    text-decoration: underline;
+}
+#robot1, #robot2{
+    padding: 15px;
+} 
+header, footer{
+    background-color: #f3cfb4;
+}
+.abcd{
+    display: flex;
+    flex-direction:row;
+    gap: 2px;
+}
+
+
+ 
+
+
+
+/* default color scheme */
+:root {
+    --primary-color: #abdbe3;
+    --secondary-color: #f3cfb4;
+    --text-color: black;
+  }
+  
+  /* color scheme 1 */
+  .color-scheme-1 {
+    --primary-color: #ffbb00;
+    --secondary-color: #a4c639;
+    --text-color: white;
+  }
+  
+  /* color scheme 2 */
+  .color-scheme-2 {
+    --primary-color: #1e90ff;
+    --secondary-color: #ff8c00;
+    --text-color: white;
+  }
+  
+  /* color scheme 3 */
+  .color-scheme-3 {
+    --primary-color: #8b008b;
+    --secondary-color: #20b2aa;
+    --text-color: white;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  header, footer {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  
+
+
+
+  @media screen and (max-width: 500px) {
+    /* your styles for 500px and below screens here */
+    #projects {
+      grid-template-areas:
+        "projects1 projects1"
+        "gamesimade projectsimade"
+        "game1 p1"
+        "game2 p1"
+        "game3 p2"
+        "robot1 robot2";
+    }
+    .abouth{
+        position: absolute;
+        text-align:  center;
+        right: 50%;
+    }
+    .abouth2{
+        position: absolute;
+        text-align:  center;
+        right: 20%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 1000px) {
+    /* your styles for 1000px and below screens here */
+    #projects {
+      grid-template-areas:
+        "projects1 projects1 projects1"
+        "gamesimade projectsimade projectsimade"
+        "game1 game2 game3"
+        "robot1 p1 p2"
+        "robot2 p1 p2";
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 20px;
+    }
+    
+    .abouth{
+        position: absolute;
+        text-align:  center;
+        right: 50%;
+    }
+    .abouth2{
+        position: absolute;
+        text-align:  center;
+        right: 20%;
+    }
+  }
